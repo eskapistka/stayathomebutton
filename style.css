@@ -1,0 +1,222 @@
+html {
+    height: 100%;
+}
+body {
+    background: #FFACAC;
+    height: 100%;
+    overflow: hidden;
+}
+
+p, span {
+    font-family: 'Roboto', sans-serif;
+}
+
+.title {
+    padding-top: 8vh;
+    line-height: 2rem;
+    vertical-align: middle;
+}
+
+.logo {
+    font-size: x-large;
+    font-weight: 700;
+    margin: 0;
+    margin-right: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 15px 25px;
+    font-size: large;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: black;
+    border: none;
+    box-shadow: 0 3px #999;
+    font-weight: 700;
+}
+
+    button:hover {
+        background-color: #121212;
+    }
+
+    button:active {
+        background-color: #121212;
+        box-shadow: 0 1px #666;
+        transform: translateY(2px);
+    }
+
+.container {
+    min-height: 100%;
+}
+
+.title {
+    display: inline;
+}
+
+.row-content {
+    margin-top: 4%;
+    margin-bottom: 8%;
+    height: 95%;
+}
+
+.col-left {
+    background: white;
+    margin-right: 1.5rem;
+    height: 70vh;
+}
+
+.col-right {
+    margin-left: 1.5rem;
+    height: 70vh;
+}
+
+.col-right-up {
+    border: white solid;
+    border-width: 10px;
+    height: 50%;
+}
+
+.col-right-down {
+    border: white solid;
+    border-width: 10px;
+    margin-top: 10%;
+    height: 44.8%;
+}
+
+.col-left-content {
+    margin: 1.5rem;
+}
+
+.col-right-up-content {
+    font-weight: 700;
+    margin: 1.5rem;
+}
+
+.idea {
+    font-size: small;
+}
+
+.exclamationmark {
+    float: right;
+    transform: translate(-2rem, -6rem);
+    position: relative;
+    z-index: -100;
+}
+
+.footer {
+    font-size: x-small;
+    font-weight: 700;
+    margin-right: 3rem;
+}
+
+.staysafe {
+    position: absolute;
+    right: 15px;
+    margin-top: 23vh;
+    height: 50vh;
+}
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+
+@media (max-width: 575px) {
+    .title {
+        padding-top: 5vh;
+    }
+
+    .logo {
+        font-size: medium;
+        margin-right: 0;
+    }
+
+    i {
+        transform: scale(0.7);
+    }
+
+    .col-left {
+        margin-right: 15%;
+        margin-left: 15%;
+        height: 50vh;
+
+        font-size: small;
+        line-height: 0.7rem;
+        overflow: scroll;
+    }
+
+    .col-left-content {
+        margin: 1rem;
+    }
+
+    .bored{
+        font-size: small;
+        line-height: 1rem;
+        margin-bottom: 10px;
+    }
+    button {
+        font-size: small;
+    }
+
+    .col-right {
+        margin-top: 3%;
+        margin-right: 15%;
+        margin-left: 15%;
+        padding: 0;
+        overflow: scroll;
+    }
+
+    .col-right-up {
+        margin-top: 2vh;
+        height: 25vh;
+        border-width: 5px;
+
+        font-size: small;
+    }
+
+    .col-right-up-content {
+        margin: 1rem;
+    }
+
+    .col-right-down{
+        display: none;
+    }
+    .footer {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-size: xx-small;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 576px) {
+    .col-right-up {
+        height: 100%;
+    }
+    .col-right-down {
+        display: none;
+    }
+    .col-left-content {
+        font-size: small;
+    }
+    .introduction-second {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .col-right-up {
+        border: white solid;
+        border-width: 10px;
+        height: 50%;
+    }
+
+    .col-right-down {
+        border: white solid;
+        border-width: 10px;
+        margin-top: 10%;
+        height: 46.8%;
+    }
+}
+
+
